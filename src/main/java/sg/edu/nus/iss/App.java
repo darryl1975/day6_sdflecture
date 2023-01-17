@@ -98,7 +98,7 @@ public final class App {
         employees.add(new Employee(3, "Kelvin", "Khoo", 8000));
         employees.add(new Employee(4, "Bernard", "Tan", 30000));
         employees.add(new Employee(5, "Donnie", "Yen", 50000));
-        employees.add(new Employee(6, "Adam", "Cheng", 50000));
+        employees.add(new Employee(6, "Chris", "Cheng", 51000));
         // employees.forEach(emp -> {
         // System.out.println(emp);
         // });
