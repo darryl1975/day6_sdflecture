@@ -63,5 +63,22 @@ public final class App {
         executorService.execute(mRI5);
         executorService.shutdown();
 
+        MyRunnableInterface<Integer> addOperation = (a, b) -> {
+            return a + b;
+        };
+        MyRunnableInterface<Integer> multiplyOperation = (a, b) -> {
+            return a * b;
+        };
+        MyRunnableInterface<Integer> minusOperation = (a, b) -> {
+            return a - b;
+        };
+        MyRunnableInterface<String> concatenateString = (a, b) -> {
+            return a + b;
+        };
+
+        System.out.println("addOperation: " + addOperation.process(1, 1));
+        System.out.println("multiplyOperation: " + multiplyOperation.process(2, 5));
+        System.out.println("minusOperation: " + minusOperation.process(10, 2));
+        System.out.println("concatenateString: " + concatenateString.process("The quick brown fox ", "jumps over the wall."));
     }
 }
